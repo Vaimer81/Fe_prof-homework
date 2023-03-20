@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Выведите с помощью цикла столбец чисел от 1 до 100
+      /* for (let index = 1; index <= 100; index++) {
+            console.log(index);
+           }*/
+ // 2. Выведите с помощью цикла столбец чисел от 100 до 1
+         /*for (let index = 100; index >= 1; index--) {
+            console.log(index);
+           }*/
+    // 3.Выведите с помощью цикла столбец четных чисел от 1 до 100.   
+   /* for (let index = 2; index <= 100; index += 2) {
+            console.log(index);
+        }*/
+        //4. Заполните массив 10-ю иксами с помощью цикла 
+        //const arr = []
+        // for (let index = 0; index < 10; index++) {
+        //     arr[index] = 'x'
+        //   }
+        // console.log(arr);
+        //5. Заполните массив числами от 1 до 10 с помощью цикла
+
+        // for (let index = 1; index <= 10; index++) {
+        //     //arr[index]=index
+        //     arr.push(index)
+        // } 
+        // console.log(arr)
+
+        //6. Заполните массив 10-ю случайными числами (дробями) от 0 до 1 с помощью цикла. Дроби округляйте до двух знаков в дробной части
+
+        // for (let index = 0; index < 10; index++) {
+        // arr.push(Math.random(index).toFixed(2))
+        // }
+        // console.log(arr)
+
+        // 7. Заполните массив 10-ю случайными числами от 1 до 10 с помощью цикла
+
+        // for (let index = 0; index < 10; index++) {
+        // arr.push(Math.round(Math.random(index)*10) + 1)
+        // }
+        // console.log(arr)
+
+        // 8. Дан массив с числами. С помощью цикла выведите только те элементы массива, которые больше нуля и меньше 10-ти
+
+        const newArr = [1, 2, -10, 56, 458, 5, -25]
+        // for (let index = 0; index < newArr.length; index++) {
+        //     if (newArr[index] > 0 && newArr[index] < 10) {
+        //         console.log(newArr[index])
+        //     }
+        // }
+
+        // 9. Дан массив с числами. С помощью цикла проверьте, что в нем есть элемент со значением 5. Как только будет найден первый такой элемент - выведите 'Есть' и оборвите цикл. Если такого элемента нет - ничего не выводите
+       
+        // for (let index = 0; index < newArr.length; index++) {
+        //     newArr[index] === 5 ? console.log("есть") : ''
+        //     }
+        
+        // 10. Дан массив с числами. С помощью цикла найдите сумму элементов этого массива
+
+        // let sum = 0
+        // for (let index = 0; index < newArr.length; index++) {
+        //     sum += newArr[index]
+        //     }    
+        //     console.log(sum);
+
+        // 11. Дан массив с числами. С помощью цикла найдите сумму квадратов элементов этого массива
+
+        // let sum = 5
+        // for (let index = 0; index < newArr.length; index++) {
+        //     sum += newArr[index]**2
+        //     }    
+        //     console.log(sum);
+
+        // 12. Дан массив с числами. Найдите среднее арифметическое его элементов (сумма элементов, делить на количество)
+        let arr = [1,2,3,4,5,6,7,8,9]
+        let sum = 0
+        for (let index = 0; index < arr.length; index++) {
+            sum += arr[index]
+            }    
+        const result = sum/arr.length
+            console.log(result);
+    </script>
+</body>
+</html>
