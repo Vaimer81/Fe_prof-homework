@@ -18,7 +18,7 @@ console.log(positiv);
 // 3. Напишите функцию, которая принимает массив чисел и возвращает новый массив чисел, содержащий только нечетные числа.
 
 function Numbers(numbers){
-    return numbers.filter(numbers => numbers % 2 !== 0);
+    return numbers.filter(numbers => numbers % 2 ===1 );
 }
 const number = []
 const oddNumbers = Numbers(numbers);
