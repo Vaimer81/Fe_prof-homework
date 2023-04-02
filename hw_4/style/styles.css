@@ -1,0 +1,28 @@
+.product-card {
+    border: 10px solid #dbabab;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 30px;
+    width: 15%;
+    margin-left:42%;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    margin-bottom: 0;
+    
+  }
+  
+  .in-stock {
+    background-color: green;
+  }
+  
+  .out-of-stock {
+    background-color: gray;
+  }
