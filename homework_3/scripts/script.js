@@ -40,3 +40,27 @@ const activeAdultUsers = users
 const filteredUsers = users.filter(user => !user.name.startsWith('O'));
 console.log(filteredUsers);
 // 4. Сформировать новый массив, в который попадут только имена активных и совершеннолетних пользователей в нижнем регистре
+const result = users
+  .filter(user => user.active && user.age >= 18) // фильтруем только активных и совершеннолетних пользователей
+  .map(user => user.name.toLowerCase()); // переводим их имена в нижний регистр и формируем новый массив
+
+console.log(result);
+
+// ****
+// 1. Сформировать новый массив, где пользователи будут отсортированы по возрасту (.sort())
+
+// создаем новый массив, содержащий копии пользователей из исходного массива
+const sortedUsers = [...users];
+
+// применяем метод sort() к новому массиву, передав ему функцию сравнения пользователей по возрасту
+sortedUsers.sort((a, b) => a.age - b.age);
+
+// выводим результат
+console.log(sortedUsers);
+// 2. Найти сумму возрастов всех пользователей (.reduce())
+
+// вычисляем сумму возрастов всех пользователей с помощью метода reduce()
+const totalAge = users.reduce((acc, user) => acc + user.age, 0);
+
+// выводим результат
+console.log(totalAge);
