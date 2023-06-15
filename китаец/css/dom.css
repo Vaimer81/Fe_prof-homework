@@ -403,7 +403,7 @@ header input {
 #grid_banners_block {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  gap: 13px;
 }
 
 
