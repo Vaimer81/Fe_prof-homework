@@ -1,0 +1,18 @@
+.Student_item {
+	border: 3px solid black;
+	border-radius: 15px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: rgb(245, 239, 191);
+}
+
+.cross {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	cursor: pointer;
+}

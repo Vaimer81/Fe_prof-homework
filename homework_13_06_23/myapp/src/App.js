@@ -13,6 +13,7 @@ function App() {
 			<ProductsContainer
 				prod={prod}
 				delete_product={delete_product}
+				
 			/>
 		</div>
 	)
