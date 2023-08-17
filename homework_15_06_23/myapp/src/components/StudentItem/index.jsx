@@ -2,7 +2,9 @@ import React from 'react'
 import s from './index.module.css'
 
 export default function StudentItem({ userId, id, title, completed, delete_student }) {
-	const item_styles = {color: completed === true ?'green':'blue'}
+	const item_styles = { color: completed === true ? 'green' : 'blue' }
+
+	
   return (
 	  <div className={s.Student_item}
 	  >
